@@ -57,7 +57,7 @@ $$
 この時、3つ組 $(\Omega, \mathcal{F}, P)$ を確率空間といい、可測集合 $A\in\mathcal{F}$ を事象と呼ぶ。また、 $A$ による $P$ の評価 $P(A)$ を $A$の確率と呼ぶ。
 
 
-### 確率空間の例(前半☆☆☆後半☆☆)
+### 確率空間の例前半(☆☆☆)
 コインを投げて裏と表が出る確率が、それぞれ $1/2$ であることを確率空間として表したとき、例えば次のようになる。
 
 - $\Omega:=\lbrace裏, 表\rbrace$
@@ -72,8 +72,13 @@ $$
 - $\mathcal{F} := \mathfrak{P}(\Omega) = \lbrace \emptyset, \lbrace0\rbrace , \lbrace1\rbrace , \lbrace0, 1\rbrace \rbrace$
 - $P(\lbrace0\rbrace)=P(\lbrace1\rbrace)=\frac{1}{2}$
 
-ここでもう一つ違う表現を考える。(ここから後半)
-
 ## 確率変数(☆☆)
+確率空間 $(\Omega, \mathcal{F}, P)$ 上の確率変数とは、ある可測空間 $(E, \mathcal{E})$ に対して、写像 $X: \Omega \rightarrow E$ であって、任意の $A\in\mathcal{E}$ に対して $X^{-1}(A):=\lbrace \omega\in\Omega | X(\omega) \in A \rbrace \in \mathcal{F}$ を満たすものをいう。
 
-## 確率分布(☆☆☆)
+多くの場合 $E$ は位相空間であって、その時完全加法族 $\mathcal{E}$ としてはボレル集合族 $\mathcal{B}(E)$ を採用する。 $E=\mathbb{R}^d$ のとき、 $X$ を $d$ 次元確率変数といい、特に $d=1$ のときは単に確率変数と呼ぶことが多い。
+
+## 確率分布(☆☆)
+
+
+
+### 確率空間の例後半(☆☆)
