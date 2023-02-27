@@ -1,5 +1,6 @@
 # 記法
 $\mathbf{x}=[x_1,\cdots,x_n]$は$n\in\mathbb{N}$ 次元列ベクトルを表す。
+$\mathbf{X}=[\mathbf{x}_1,\cdots,\mathbf{x}_n]$ は $\mathbb{N}\times\mathbb{N}$ の行列。
 
 # ユニット (unit)
 ニューラルネットワークにおいて、基本構成要素となるのがユニット(ニューロンと呼ばれることもある)である。
@@ -62,3 +63,7 @@ $p_\theta(\mathbf{x})$ は本来は $p(\mathbf{x}|\theta)$ と書きます。た
 一般に生成モデルでは、グラフィカルモデルをユニットを用いて実装する。
 
 深層生成モデルは、グラフィカルモデルをDNNを用いて実装するモデルである。
+
+
+## Energy Based Model(EBM)
+EBMは、ある

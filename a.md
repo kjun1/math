@@ -6,17 +6,23 @@
 
 **note**「集まり」を「関東圏の都道府県」とした時に「山梨」はどうなるんかわからんよね〜
 
+「$\omega$が集合(個体変数) $\Omega$の元である」という文は
+$$
+    \omega \in \Omega
+$$
+という式で示される。
 
-## 公理系
-
-### 表記
+## 表記
 $x,y,z,\cdots,A,B,C$は個体変数。
 
-$P,Q,R$は論理式。
+$P$は論理式。
 
 $P(x)$は「$P$の中に現れる変数$x$に注目する」の意味で $P$ と $P(x)$は同じ文字列。
 
 **warning**小さい文字$x,y$などが集合などを含む要素であることに注意。勝手に集合ではないと思い込まない
+
+
+## 公理系
 
 ### 外延性公理(等しさの定義)
 同じ元を持つ場合、2つの集合は等しい。
@@ -43,7 +49,7 @@ $$
 $Y$は$P$の自由変数ではない。
 
 $$
-    \forall w_0 \cdots \forall w_{i-1}\forall X[(\forall x(x\in X\land \exists!	yP)) \rightarrow \exist X\forall y(y\in Y\rightarrow \exist x(x \in X\land P))]
+    \forall w_0 \cdots \forall w_{i-1}\forall X[(\forall x(x\in X\land \exists!	yP)) \rightarrow \exist Y\forall x(x\in X\rightarrow \exist y(y \in Y\land P))]
 $$
 
 
@@ -58,6 +64,7 @@ $$
     \bigcup X = \{x\in A| \exist B(x\in B \land B \in X)\}
 $$
 
+合併とも呼ぶ
 
 ### 無限公理(無限集合の存在)
 $$
@@ -119,6 +126,8 @@ $$
     \bigcap X = \{x\in A|\forall B(B \in X \rightarrow x \in B)\}
 $$
 
+交叉とも呼ぶ
+
 ### 集合族
 
 $$
@@ -138,14 +147,23 @@ $$
 a\times b = \{u\in \mathcal{P}(\mathcal{P}(a\cup b))|\exist x\exist y(x\in a \land y\in b\land u=\langle x,y\rangle)\}
 $$
 
+また後述する写像の定義を用いて、非可算無限集合における直積を定義できる。
+
+$$
+    \prod_{\lambda\in\Lambda} A_\lambda= \{f:\Lambda\rightarrow\bigcup_{\lambda\in\Lambda}A_\lambda |\lambda\in \Lambda \land f(\lambda)\in A_\lambda\}
+$$
+
 ### 2項関係
 $R=\langle X,Y,G\rangle \leftrightarrow G\subseteq X\times Y$
 
-この時、3-組$R$ を二項関係、集合$G$を二項関係$R$のグラフと呼ぶ
+この時、3-組$R$ を2項関係、集合$G$を2項関係$R$のグラフと呼ぶ。
+
+2項関係の表記法として、
+$G(X,Y),XGY$ などがある。
 
 ### 写像
 二項関係$G_f$が
-- 左全域性: 
-- 右一意性:
+- 左全域性: $\forall x(x\in X\rightarrow \exist y(y \in Y\land P))$
+- 右一意性: $\forall x(x\in X\land \exists!	yP)$
 
-つまり置換公理を満たす時、3-組 $f = \langle X, Y, G_f \rangle$をこの関数関係 $G_f$から定まる$X$から$Y$への写像と呼び、$f: X → Y$で表す。またこのとき、$(x, y) ∈ Gf $であることを f(x) = y と書き、Gf = {(x, y) | y = f(x)} を写像 f のグラフと呼ぶ。
+を満たす時(置換公理を満たすときでも)、3-組 $f = \langle X, Y, G_f \rangle$をこの関数関係 $G_f$から定まる$X$から$Y$への写像と呼び、$f: X → Y$で表す。またこのとき、$(x, y) ∈ G_f $であることを$f(x) = y$と書き、$G_f = \{(x, y) | y = f(x)\}$を写像$f$のグラフと呼ぶ。
