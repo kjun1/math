@@ -19,7 +19,11 @@
 
 1. $\Omega\in\mathcal{F}$
 2. $A\in\mathcal{F}$ に対して $A^c\in\mathcal{F}$
-3. $(A_n)_{n\in\mathbb{N}}\subset\mathcal{F}$ に対して $\bigcup\limits_{n=1}^{\infty} A_n \in \mathcal{F}$
+3. $(A_n)_{n\in\mathbb{N}} \subset \mathcal{F}$ に対して 
+
+$$
+    \bigcup\limits_{n=1}^{\infty} A_n \in \mathcal{F}
+$$
 
 この時、集合 $\Omega$ とその上の完全加法族 $\mathcal{F}$ との対 $(\Omega, \mathcal{F})$ は可測空間と呼ばれる集合体になる。
 
