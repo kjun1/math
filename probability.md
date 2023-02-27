@@ -24,32 +24,34 @@
 この時、集合 $\Omega$ とその上の完全加法族 $\mathcal{F}$ との対 $(\Omega, \mathcal{F})$ は可測空間と呼ばれる集合体になる。
 
 ## 確率測度と確率空間(☆☆)
-可測空間 $(\Omega, \mathcal{F})$ の上の写像 $P$ が以下の性質を持つとき、$P$ を確率測度と呼ぶ。
+可測空間 $(\Omega, \mathcal{F})$ の上の写像 $P$ が以下の性質を持つとき、 $P$ を確率測度と呼ぶ。
 
 1. $P:\mathcal{F} \rightarrow [0, 1]$
 2. $A_n \in\mathcal{F}, n\in\mathbb{N}$ かつ $A_i \cap A_j = \emptyset \ (\forall i \neq j)$ のとき、
+
 $$
     P \Bigl( \textstyle\bigcup\limits_{n=1}^\infty A_n \Bigr) = \sum\limits_{n=1}^\infty P(A_n)
 $$
-3.  $P(\Omega)=1$
 
-この時、3つ組 $(\Omega, \mathcal{F}, P)$ を確率空間といい、可測集合$A\in\mathcal{F}$ を事象と呼ぶ。また、 $A$ による $P$ の評価 $P(A)$ を $A$の確率と呼ぶ。
+3. $P(\Omega)=1$
+
+この時、3つ組 $(\Omega, \mathcal{F}, P)$ を確率空間といい、可測集合 $A\in\mathcal{F}$ を事象と呼ぶ。また、 $A$ による $P$ の評価 $P(A)$ を $A$の確率と呼ぶ。
 
 
 ### 確率空間の例(前半☆☆☆後半☆☆)
 コインを投げて裏と表が出る確率が、それぞれ $1/2$ であることを確率空間として表したとき、例えば次のようになる。
 
-- $\Omega:=\{裏, 表\}$
-- $\mathcal{F} := \mathfrak{P}(\Omega) = \{ \emptyset, \{裏\} , \{表\} , \{裏, 表\} \}$
-- $P(\{裏\})=P(\{表\})=\frac{1}{2}$
+- $\Omega:=\lbrace裏, 表\rbrace$
+- $\mathcal{F} := \mathfrak{P}(\Omega) = \lbrace \emptyset, \lbrace裏\rbrace , \lbrace表\rbrace , \lbrace裏, 表\rbrace \rbrace$
+- $P(\lbrace裏\rbrace)=P(\lbrace表\rbrace)=\frac{1}{2}$
 
 この定義において、確率空間 $(\Omega, \mathcal{F}, P)$ はコイントスのモデルとなっていることがわかる。
 
 また、 $0$ を裏、 $1$ を表と考えると、以下の確率空間 $(\Omega, \mathcal{F}, P)$ もコイントスのモデルとなっていることがわかる。
 
-- $\Omega:=\{0, 1\}$
-- $\mathcal{F} := \mathfrak{P}(\Omega) = \{ \emptyset, \{0\} , \{1\} , \{0, 1\} \}$
-- $P(\{0\})=P(\{1\})=\frac{1}{2}$
+- $\Omega:=\lbrace0, 1\rbrace$
+- $\mathcal{F} := \mathfrak{P}(\Omega) = \lbrace \emptyset, \lbrace0\rbrace , \lbrace1\rbrace , \lbrace0, 1\rbrace \rbrace$
+- $P(\lbrace0\rbrace)=P(\lbrace1\rbrace)=\frac{1}{2}$
 
 ここでもう一つ違う表現を考える。(ここから後半)
 
