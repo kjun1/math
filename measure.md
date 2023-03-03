@@ -1,40 +1,4 @@
-# 測度
-可測空間 $(X, \mathcal{F})$ の上の写像 $\mu$ が以下の性質を持つとき、 $\mu$ を測度(可算加法的測度)と呼ぶ。
-
-1. $\mu:\mathcal{F} \rightarrow \mathbb{R}_{\geq 0}$
-2. $\mu(\emptyset) = 0$
-3. $\lbrace A_n \rbrace_{n\in\mathbb{N}} \subset\mathcal{F}$ かつ $A_i \cap A_j = \emptyset \ (\forall i \neq j)$ のとき、
-
-$$
-    \mu \Bigl( \textstyle\bigcup\limits_{n=1}^\infty A_n \Bigr) = \sum\limits_{n=1}^\infty \mu(A_n)
-$$
-
-この時、 $\mathcal{F}$ の元は可測集合と呼ばれ、数学的構造 $(X,\mathcal{F}, \mu)$ は測度空間と呼ばれる。
-
-# ルベーグ積分
-
-## ルベーグ外測度
-区間 $I=[a_1,b_1]\times [a_2,b_2]\times\dotsb\times [a_n,b_n]\quad (a_i\leq b_i)$ に対し、その体積を $\operatorname{vol}(I) := (b_1-a_1)(b_2-a_2)\dotsb(b_n-a_n)$ と定義する。全体集合 $\mathbb{R}^n$ を区間の可算列によって被覆できるから、 $\mathbb{R}^n$ の任意の部分集合 $E$ が上記の区間の可算合併によって被覆できることは明らかである。そこで $E$ のルベーグ外測度を
-
-$$
-    \mu^*(E):= \inf\Big\lbrace \sum_{j=1}^{\infty}\hbox{vol}(I_j): \bigcup_{j=1}^{\infty} I_j \supseteq E \Bigr\rbrace
-$$
-
-と定義する。ただし下限 $\inf$ は $E$ を被覆する任意の基本集合列 $I_j$ にわたってとるものとする。
-
-これにより、外測度 $\mu^* : \mathfrak{P}(\mathbb{R}^n) \rightarrow \mathbb{R}_{\geq 0}$ が定まる。
-
-## ルベーグ測度
-全体集合 $\mathbb{R}^n$ の部分集合 $A$ がルベーグ可測であるとは、 $\mathbb{R}^n$ の任意の部分集合 $S$ に対して、カラテオドリの条件
-
-$$
-    \mu^* = \mu^* (S \cap A) + \mu^* (S \cap A^c)
-$$
-
-を満たす事とする。
-
-ルベーグ可測な集合族全体は、 $σ$ 加法族を為す。ルベーグ可測集合 $A$ に対するルベーグ測度 $\mu$ を $\mu(A) := \mu^*(A)$ と定義する。
-
+# 測度論
 
 ## 有限加法族
 集合 $\Omega$ とその上の冪集合 $\mathfrak{P}(\Omega)$ に対し、 $\Omega$ の部分集合族 $\mathcal{F} \subset \mathfrak{P}(\Omega)$ が 有限加法族であるとは、以下の性質を持つことである。
@@ -55,7 +19,46 @@ $$
 ### $\sigma$ 加法族の生成
 
 ## 可測関数
+https://ja.wikipedia.org/wiki/%E5%8F%AF%E6%B8%AC%E9%96%A2%E6%95%B0
 
+## 測度
+
+可測空間 $(X, \mathcal{F})$ の上の写像 $\mu$ が以下の性質を持つとき、 $\mu$ を測度(可算加法的測度)と呼ぶ。
+
+1. $\mu:\mathcal{F} \rightarrow \mathbb{R}_{\geq 0}$
+2. $\mu(\emptyset) = 0$
+3. $\lbrace A_n \rbrace_{n\in\mathbb{N}} \subset\mathcal{F}$ かつ $A_i \cap A_j = \emptyset \ (\forall i \neq j)$ のとき、
+
+$$
+    \mu \Bigl( \textstyle\bigcup\limits_{n=1}^\infty A_n \Bigr) = \sum\limits_{n=1}^\infty \mu(A_n)
+$$
+
+この時、 $\mathcal{F}$ の元は可測集合と呼ばれ、数学的構造 $(X,\mathcal{F}, \mu)$ は測度空間と呼ばれる。
+
+
+## ルベーグ測度
+区間 $I=[a_1,b_1]\times [a_2,b_2]\times\dotsb\times [a_n,b_n]\quad (a_i\leq b_i)$ に対し、その体積を $\operatorname{vol}(I) := (b_1-a_1)(b_2-a_2)\dotsb(b_n-a_n)$ と定義する。全体集合 $\mathbb{R}^n$ を区間の可算列によって被覆できるから、 $\mathbb{R}^n$ の任意の部分集合 $E$ が上記の区間の可算合併によって被覆できることは明らかである。そこで $E$ のルベーグ外測度を
+
+$$
+    \mu^*(E):= \inf\Big\lbrace \sum_{j=1}^{\infty}\hbox{vol}(I_j): \bigcup_{j=1}^{\infty} I_j \supseteq E \Bigr\rbrace
+$$
+
+と定義する。ただし下限 $\inf$ は $E$ を被覆する任意の基本集合列 $I_j$ にわたってとるものとする。
+
+これにより、外測度 $\mu^* : \mathfrak{P}(\mathbb{R}^n) \rightarrow \mathbb{R}_{\geq 0}$ が定まる。
+
+全体集合 $\mathbb{R}^n$ の部分集合 $A$ がルベーグ可測であるとは、 $\mathbb{R}^n$ の任意の部分集合 $S$ に対して、カラテオドリの条件
+
+$$
+    \mu^* = \mu^* (S \cap A) + \mu^* (S \cap A^c)
+$$
+
+を満たす事とする。
+
+ルベーグ可測な集合族全体は、 $σ$ 加法族を為す。ルベーグ可測集合 $A$ に対するルベーグ測度 $\mu$ を $\mu(A) := \mu^*(A)$ と定義する。
+
+## ルベーグ積分
+https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86
 
 ## とりあえず
 
