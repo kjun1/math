@@ -17,13 +17,11 @@ https://zenn.dev/lotz/articles/14458f024674e14f4134
 - クラス $\mathrm{Ob}(C)$ その要素を対象(object)と呼ぶ。
 - クラス $\mathrm{Mor}(C)$ その要素を射(morphism)と呼ぶ。
 
+圏 $C$ とは以下の条件を満たすものをいう。
 
 1. 各 $f\in \mathrm{Mor}(C)$ に対して、ドメイン(domain)と呼ばれる対象 $\mathrm{dom}(f)\in \mathrm{Ob}(C)$ とコドメイン(codomain)と呼ばれる対象 $\mathrm{cod}(f)\in \mathrm{Ob}(C)$ が定められている $\mathrm{dom}(f)=a,\mathrm{cod}(f)=b$ であることを $f:a\rightarrow b$ や $a\overset{f}\rightarrow b$ と書いて表す。また対象 $a,b \in \mathrm{Ob}(C)$ に対して $\mathrm{Hom}_C(a,b) := \lbrace f\in \mathrm{Mor}(C)| f:a\rightarrow b\rbrace$ と書く。
 
-2. 2つの射 $f,g \in \mathrm{Mor}(C)$ が $\mathrm{cod}(f) = \mathrm{dom}(g)$ を満たすとき、$f$ と $g$ の合成射と呼ばれる射  $g \circ f$ が定められていて、 $\mathrm{dom}(g \circ f) = \mathrm{dom}(f), \mathrm{cod}(g \circ f) = \mathrm{cod}(g \circ f) = \mathrm{cod}(g)$ を満たす。(つまり $f:a\rightarrow b, g:b\rightarrow c$ のとき、 $g \circ f: a \rightarrow c$)
-
-
-圏 $C$ とは以下の条件を満たすものをいう。
+2. 2つの射 $f,g \in \mathrm{Mor}(C)$ が $\mathrm{cod}(f) = \mathrm{dom}(g)$ を満たすとき、 $f$ と $g$ の合成射と呼ばれる射  $g \circ f$ が定められていて、 $\mathrm{dom}(g \circ f) = \mathrm{dom}(f), \mathrm{cod}(g \circ f) = \mathrm{cod}(g)$ を満たす。(つまり $f:a\rightarrow b, g:b\rightarrow c$ のとき、 $g \circ f: a \rightarrow c$)
 
 3. 射の合成は結合律を満たす。即ち、 $f:a\rightarrow b, g:b\rightarrow c, h:c\rightarrow d$ に対して $(h \circ g) \circ f = h \circ (g \circ f)$ が成り立つ。
 
