@@ -17,7 +17,7 @@ $$
 $x$ と $y$ が集合であれば、元が $x$ と $y$ のみである集合 $p$ が存在する。
 
 $$
-    \forall x \forall y\exist p \forall z(z \in p \leftrightarrow (z=x \lor z=y))
+    \forall x \forall y \exist p \forall z(z \in p \leftrightarrow (z=x \lor z=y))
 $$
 
 外延性の公理から$x,y$に対して対の公理が存在を主張する集合はただ1つであることが言えるので、これを$\{x,y\}$で表す。$\{x,x\}$ を $\{x\}$で表す。
