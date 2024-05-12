@@ -5,7 +5,7 @@
 
 1. $\Omega\in\mathcal{F}$
 2. $A\in\mathcal{F}\Rightarrow A^c(=\Omega\setminus A)\in\mathcal{F}$
-3. $ \lbrace A_n \rbrace _{n=1}^k \subset \mathcal{F} \Rightarrow \bigcup\limits_{n=1}^{k} A_n \in \mathcal{F} $
+3. $\lbrace A_n \rbrace _{n=1}^k \subset \mathcal{F} \Rightarrow \bigcup\limits_{n=1}^{k} A_n \in \mathcal{F}$
 
 ## $\sigma$ 加法族
 集合 $\Omega$ とその上の冪集合 $\mathfrak{P}(\Omega)$ に対し、 $\Omega$ の部分集合族 $\mathcal{F} \subset \mathfrak{P}(\Omega)$ が $\sigma$ 加法族であるとは、以下の性質を持つことである。
